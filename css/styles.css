@@ -1,0 +1,165 @@
+body{
+    font-family: 'Montserrat';
+}
+/* nav bar  start */
+ul{
+    margin-left:auto; 
+    /* The auto Value-
+    You can set the margin property to auto to horizontally center the element within its container.
+    The element will then take up the specified width, and the remaining space will be split equally between the left and right margins. */
+}
+.navbar{
+    padding-bottom: 4.5rem;
+}
+.nav-item{
+    padding: 0px 20px ;
+    font-size: 20px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Light';
+}
+.head,#testimonials,#title {
+    color:#fff;
+}
+#title{
+    background-color:#ff4c68 ;
+}
+h1{
+   font-family: 'Montserrat';
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 900; 
+}
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+.navbar-brand{
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+.title-image{
+    transform: rotate(25deg);
+    position: absolute;  /*for using z-index in below id */
+}
+/* nav-bar end  */
+/* feature section start */
+#features,.carousel-item,#pricing,#cta,#footer{
+    padding: 7% 15%;
+}
+#features{
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.padd{
+    text-align: center;
+}
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+h3{
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 2rem;
+}
+p{
+    color: #8f8f8f;
+    font-size: 1.2rem;
+}
+.fa-solid{
+    color: #ef8172;
+    padding-bottom: 1rem;
+}
+.fa-solid:hover{
+    color: #ff4c68;
+}
+/* features section end  */
+/*only use id's when required do not use id's normally , use classes generally*/
+/* testitmonial section start  */
+#testimonials{
+    background-color: #ef8172;
+
+}
+.testimonial-image{
+    width: 10%;
+    border-radius:50%;
+}
+em{
+    font-size: 1.2rem;
+    padding-left: 2%;
+}
+h2{
+    font-family: "Montserrat-Bold";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight:bold;
+    padding-bottom: 20px;
+}
+/* pricing section */
+#press{
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;  
+}
+
+.pricing-column{
+    padding: 3% 2%;
+}
+@media (max-width:1000px) {
+    .title-image{
+        position:static;
+        transform: rotate(0deg);
+    }
+    #title{
+        text-align: center;
+    }   
+}
+/* cta section */
+#cta{
+
+    height: 500px;
+    background-color: #ff4c68;
+}
+.head{
+
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 7%;
+}
+/* footer section*/
+#footer{
+    height: 200px;
+    background-color: #fff;;
+  
+}
+.img-footer{
+    padding: 0 10px;
+}
+/*hierarchical selectors 
+example code-  <div class="container">
+                    <h1 id="heading"></h1>
+                </div>
+
+in this example we can use below css to style h1
+.container #heading{
+
+}
+
+in above example below code is used as combined selectors
+div.container{
+
+}
+or
+h1#heading{
+
+}
+*/
